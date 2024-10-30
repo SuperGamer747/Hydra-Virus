@@ -1,4 +1,6 @@
 Imports System.Runtime.InteropServices
+Imports System.Runtime.InteropServices
+Imports System.Threading
 
 Public Class TaskManagerBlocker
 Private Declare Auto Function OpenProcess Lib "kernel32.dll" (ByVal dwDesiredAccess As UInteger, ByVal bInheritHandle As Boolean, ByVal dwProcessId As UInteger) As IntPtr
